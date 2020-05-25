@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import PDFManager.PDFManager;
 
 public class PDFReader {
     static BufferedWriter writer;
@@ -14,7 +15,6 @@ public class PDFReader {
             writer = new BufferedWriter(new FileWriter("C:\\Users\\Enche\\IdeaProjects\\PDF-Differential\\resources\\PDFToText\\pdfToText.txt"));
         } catch (IOException e) {
             e.printStackTrace();
-            System.out.println("aaa");
         }
     }
 

@@ -1,4 +1,4 @@
-package PDFToText;
+package PDFManager;
 
 import java.io.File;
 import java.io.IOException;
