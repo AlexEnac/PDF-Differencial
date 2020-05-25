@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PDF-Differencial.iml" filepath="$PROJECT_DIR$/PDF-Differencial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PDF-Differential.iml" filepath="$PROJECT_DIR$/PDF-Differential.iml" />
     </modules>
   </component>
 </project>

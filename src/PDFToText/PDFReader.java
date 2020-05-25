@@ -1,18 +1,33 @@
-import java.io.File;
+package PDFToText;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class PDFReader {
-    static File outputFile = new File("C:\\Users\\Enche\\IdeaProjects\\PDF-Differential\\resources\\PDFToText\\pdfToText.txt");
-    public static void main(String[] args) {
+    static BufferedWriter writer;
+
+    static {
+        try {
+            writer = new BufferedWriter(new FileWriter("C:\\Users\\Enche\\IdeaProjects\\PDF-Differential\\resources\\PDFToText\\pdfToText.txt"));
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("aaa");
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
         PDFManager pdfManager = new PDFManager();
         pdfManager.setFilePath("C:\\Users\\Enche\\IdeaProjects\\PDF-Differential\\resources\\PDFToText\\test.pdf");
         try {
             String text = pdfManager.toText();
-            outputFile.
+            writer.write(text);
+
         } catch (IOException ex) {
             Logger.getLogger(PDFReader.class.getName()).log(Level.SEVERE, null, ex);
         }
+        writer.close();
     }
 }
