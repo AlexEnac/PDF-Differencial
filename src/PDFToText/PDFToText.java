@@ -8,13 +8,12 @@ import org.jetbrains.annotations.NotNull;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
 public class PDFToText {
 
     protected static String listOfSeparators = " ,\n";
     /*https://stackoverflow.com/questions/15703704/find-emails-in-a-string*/
-    protected static String emailRegex = "[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+";
-    protected static Pattern emailPatternRegex = Pattern.compile(emailRegex, Pattern.CASE_INSENSITIVE);
+    public static final String EMAIL_REGEX = "[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+";
+    public static final Pattern EMAIL_PATTERN_REGEX = Pattern.compile(EMAIL_REGEX, Pattern.CASE_INSENSITIVE);
     static void printToTxt(@NotNull PDFManager pdfManager, @NotNull PrintStream printStream) throws IOException {
         String text = pdfManager.toText();
         printStream.append(text);
@@ -41,7 +40,7 @@ public class PDFToText {
         StringBuilder email = new StringBuilder();
         int indexOfEmailAt = content.indexOf('@');
         if(indexOfEmailAt == -1) return Optional.empty();
-        Matcher matcher = emailPatternRegex.matcher(content);
+        Matcher matcher = EMAIL_PATTERN_REGEX.matcher(content);
         while (matcher.find()) {
             email.append(matcher.group());
         }
