@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4f347b1-86cb-49ef-b2c4-ea2cb3e9d13e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/PDFFactory/empty.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/PDFFactory/emptyPDFWith5Pages.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PDFFactory/PDFFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PDFFactory/PDFFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/PDFFactory/pdfWithContent.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/PDFFactory/empty.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/resources/PDFFactory/empty.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/PDFFactory/emptyPDFWith5Pages.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/resources/PDFFactory/emptyPDFWith5Pages.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PDFFactory/PDFFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PDFFactory/PDFFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PDFFactory/PDFFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PDFFactory/PDFFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PDFToText/PDFToTextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PDFToText/PDFToTextTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,12 +126,33 @@
       <option name="project" value="LOCAL" />
       <updated>1590505149262</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added PDFFactory">
+      <created>1590519425940</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590519425940</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added PDFComparator" />
-    <option name="LAST_COMMIT_MESSAGE" value="added PDFComparator" />
+    <MESSAGE value="added PDFFactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="added PDFFactory" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1590407191846">
@@ -152,10 +175,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="683" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590400864770" />
-    <state x="610" y="114" key="CommitChangelistDialog2" timestamp="1590519407978">
+    <state x="610" y="114" key="CommitChangelistDialog2" timestamp="1590519425092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="610" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590519407978" />
+    <state x="610" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590519425092" />
     <state x="761" y="342" key="FileChooserDialogImpl" timestamp="1590400968397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -164,30 +187,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="782" y="436" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590400312464" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1590515727323">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1590601735148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590515727323" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1590515727323">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590601735148" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1590601735148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590515727323" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1590515727323">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590601735148" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1590601735148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590515727323" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1590515727323">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590601735148" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1590601735148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590515727323" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590601735148" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1590504025858">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590504025858" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590516254842">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590598805813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590516254842" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590598805813" />
     <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590405758719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -13,11 +13,12 @@ public class PDFToTextTest {
 
     private static PrintStream writer;
     private static PDFManager pdfManager = new PDFManager();
+    public static final String PATH_TO_PDF_TO_TEXT_RESOURCES_FOLDER = "../PDF-Differential/resources/PDFToText/";
 
     static void PDFToText_test() throws IOException {
-        pdfManager.setFilePath("..\\PDF-Differential\\resources\\PDFToText\\test.pdf");
+        pdfManager.setFilePath(PATH_TO_PDF_TO_TEXT_RESOURCES_FOLDER + "test.pdf");
         try {
-            writer = new PrintStream(new File("..\\PDF-Differential\\resources\\PDFToText\\pdfToText.txt"));
+            writer = new PrintStream(new File(PATH_TO_PDF_TO_TEXT_RESOURCES_FOLDER + "pdfToText.txt"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -25,9 +26,9 @@ public class PDFToTextTest {
     }
 
     static void PDFGetListOfEmails_test() throws IOException {
-        pdfManager.setFilePath("..\\PDF-Differential\\resources\\PDFToText\\listOfEmails.pdf");
+        pdfManager.setFilePath(PATH_TO_PDF_TO_TEXT_RESOURCES_FOLDER + "listOfEmails.pdf");
         try {
-            writer = new PrintStream(new File("..\\PDF-Differential\\resources\\PDFToText\\listOfEmailOutput.txt"));
+            writer = new PrintStream(PATH_TO_PDF_TO_TEXT_RESOURCES_FOLDER + "listOfEmailOutput.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -35,9 +36,9 @@ public class PDFToTextTest {
     }
 
     static void EmptyPDF_text() throws IOException {
-        pdfManager.setFilePath("..\\PDF-Differential\\resources\\PDFToText\\EmptyPDF.pdf");
+        pdfManager.setFilePath(PATH_TO_PDF_TO_TEXT_RESOURCES_FOLDER + "EmptyPDF.pdf");
         try {
-            writer = new PrintStream(new File("..\\PDF-Differential\\resources\\PDFToText\\EmptyPDFOutput.txt"));
+            writer = new PrintStream(new File(PATH_TO_PDF_TO_TEXT_RESOURCES_FOLDER + "EmptyPDFOutput.txt"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
